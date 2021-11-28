@@ -7,6 +7,7 @@ class AppColors {
   static final Color appRed = HexColor.fromHex("F41F4E");
   static final Color appLightGreen = HexColor.fromHex("00C69D");
   static final Color facebookBtnColor = HexColor.fromHex("4067B2");
+  static final Color white = Colors.white;
 }
 
 extension HexColor on Color {

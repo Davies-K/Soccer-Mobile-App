@@ -24,12 +24,16 @@ class BlockBtn extends StatelessWidget {
               btnColor ?? Theme.of(context).buttonTheme.colorScheme!.onSurface,
           width: double.infinity,
           padding: EdgeInsets.all(20),
-          child: Row(mainAxisAlignment: MainAxisAlignment.center, children: [
-            preffixWidget ?? SizedBox.shrink(),
-            Text(" $btnTitle",
-                style:
-                    TextStyle(fontWeight: FontWeight.bold, color: textColor!))
-          ])),
+          child: Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                preffixWidget ?? SizedBox.shrink(),
+                SizedBox(width: 5),
+                Text(" $btnTitle",
+                    style: TextStyle(
+                        fontWeight: FontWeight.bold, color: textColor!))
+              ])),
     );
   }
 }

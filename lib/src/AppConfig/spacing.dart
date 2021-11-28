@@ -2,6 +2,7 @@ part of appConfig;
 
 class AppSpaces {
   static final verticalSpace40 = SizedBox(height: 40);
+  static final verticalSpace80 = SizedBox(height: 80);
   static final verticalSpace20 = SizedBox(height: 20);
   static final verticalSpace10 = SizedBox(height: 10);
   static final verticalSpace5 = SizedBox(height: 5);
