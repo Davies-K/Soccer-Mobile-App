@@ -9,7 +9,7 @@ class NextWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: onNextTapped,
-      child: Text("Next",
+      child: Text("Next  ",
           style: Theme.of(context)
               .textTheme
               .bodyText1!
