@@ -1,9 +1,12 @@
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:soccer_app/src/AppConfig/app_config.dart';
 import 'package:soccer_app/src/widgets/Forms/labelled_form_input.dart';
 import 'package:soccer_app/src/widgets/Onboarding/app_auth_header.dart';
 import 'package:soccer_app/src/widgets/Shared/default_app_header.dart';
 import 'package:soccer_app/src/widgets/next_widget.dart';
+
+import 'select_league.dart';
 
 class SecureAccountScreen extends StatelessWidget {
   SecureAccountScreen({Key? key}) : super(key: key);
@@ -21,8 +24,8 @@ class SecureAccountScreen extends StatelessWidget {
         children: [
           DefaultAppHeader(
             nextActionWidget: NextWidget(
-                // onNextTapped: () => Get.to(()=> SecureAccountScreen()),
-                ),
+              onNextTapped: () => Get.to(() => SelectLeague()),
+            ),
           ),
           AppSpaces.verticalSpace40,
           Padding(
